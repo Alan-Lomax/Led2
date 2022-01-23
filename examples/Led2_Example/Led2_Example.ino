@@ -11,7 +11,7 @@
     #include "Led2.h"
 
     // Notice in the line below the OnTime or OffTime is not defined (they could have been). Instead I set them separately on lines below.
-    Led2 myLed1 = Led2(LED_BUILTIN);      // define myLed as an object created from the Led2 class. (Use the builtin LED for this demo)
+    Led2 myLed1 = Led2(LED_BUILTIN);      // define myLed1 as an object created from the Led2 class. (Use the builtin LED for this demo)
 
     void setup() {
       Serial.begin(9600);                 // for serial / debug console
