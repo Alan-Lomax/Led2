@@ -11,28 +11,28 @@
     #include "Led2.h"
 
     // Notice in the line below the OnTime or OffTime is not defined (they could have been). Instead I set them separately on lines below.
-    LED2 myLed1 = LED2(LED_BUILTIN);      // define myLed as an object created from the Led2 class. (Use the builtin LED for this demo)
+    Led2 myLed1 = Led2(LED_BUILTIN);      // define myLed as an object created from the Led2 class. (Use the builtin LED for this demo)
 
     void setup() {
       Serial.begin(9600);                 // for serial / debug console
       Serial.println(__FILE__);           // by default I like to output the file name as a minimum.
 
-      myLed.on();                         // turn on the LED
-      myLed.update();                     // call update once to put it in effect (remember this is setup code - only once through)
+      myLed1.on();                         // turn on the LED
+      myLed1.update();                     // call update once to put it in effect (remember this is setup code - only once through)
       delay(2000);                        // a forced delay for 2 seconds so you can see it
 
-      myLed.off();                        // turn off the LED
-      myLed.update();                     // call update once to put it in effect (remember this is setup code - only once through)
+      myLed1.off();                        // turn off the LED
+      myLed1.update();                     // call update once to put it in effect (remember this is setup code - only once through)
       delay(2000);                        // a forced delay for 2 seconds so you can see it
 
       // Here I am setting the two timing values individually
-      myLed.onTime(50);                   // Set LED ontime (50 ms)
-      myLed.offTime(300);                 // Set LED offtime (300 ms) - these numbers will give a fairly fast flashing effect
-      myLed.blink();                      // turn on blink mode for the LED
+      myLed1.onTime(50);                   // Set LED ontime (50 ms)
+      myLed1.offTime(300);                 // Set LED offtime (300 ms) - these numbers will give a fairly fast flashing effect
+      myLed1.blink();                      // turn on blink mode for the LED
     }
 
     // In the loop the update function runs over and over again - it does all the work.
 
     void loop() {
-      myLed.update();                     // This is all that is needed. You should see the Led flashing about 3 times per second (50ms on, 300 ms off)
+      myLed1.update();                     // This is all that is needed. You should see the Led flashing about 3 times per second (50ms on, 300 ms off)
     }
