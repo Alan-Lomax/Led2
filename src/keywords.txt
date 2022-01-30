@@ -1,0 +1,33 @@
+#######################################
+# Syntax Coloring Map for Led2
+#######################################
+# KEYWORD1 is generally used for the classes that you define in your library.
+# KEYWORD2 is used for the public member functions of the class. Basically these are the class' methods.
+# LITERAL1 is used for any #defines that are relevant for the user of the library.
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Led2		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+# Common to many
+update		KEYWORD2
+state		KEYWORD2
+on			KEYWORD2
+off			KEYWORD2
+
+# Led2 Specific
+getState	KEYWORD2
+getBlink	KEYWORD2
+onTime		KEYWORD2
+offTime		KEYWORD2
+blink		KEYWORD2
+ 
+#######################################
+# Constants (LITERAL1)
+#######################################
+DEBUG		LITERAL1
+__FILE__	LITERAL1
+
